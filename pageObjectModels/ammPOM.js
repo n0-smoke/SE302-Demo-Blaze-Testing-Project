@@ -21,6 +21,9 @@ class DemoBlazePage {
         this.yearInput = page.locator('#year'); // Year input
         this.purchaseButton = page.locator('button:has-text("Purchase")'); // Purchase button
         this.confirmationMessage = page.locator('.sweet-alert h2'); // Confirmation message after purchase
+
+        //Addint item to cart
+        this.addToCartButton = page.locator('a:has-text("Add to cart")'); // Add to cart button
     }
 
     // Open demoblaze.com
@@ -83,6 +86,18 @@ class DemoBlazePage {
      */
     async getConfirmationMessage() {
         return await this.confirmationMessage.textContent();
+    }
+
+    /**
+     * Add the selected product to the cart
+     */
+    async addToCart() {
+        await this.addToCartButton.click();
+        // Handle the browser dialog (alert) that confirms adding to the cart
+        this.page.once('dialog', async dialog => {
+            console.log(dialog.message());
+            await dialog.accept();
+        });
     }
 }
 
