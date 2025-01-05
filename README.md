@@ -1,7 +1,7 @@
 # Project for SE302 (Software testing and maintenance)
 ## Project title and description
 The title of this project is **"Demo Blaze Testing using Playwright"**.
-This repository contains automated tests for eBay using Playwright and Page Object Model (POM). It includes 15 test cases (5 smoke and 10 normal tests) validating core features like login, search, cart, and checkout. Tests run in headless mode across Chromium, Firefox, and WebKit.
+This repository contains automated tests for the website [Demo Blaze](https://www.demoblaze.com/) using Playwright and Page Object Model (POM). It includes 15 test cases (5 smoke and 10 normal tests) validating core features like login, search, cart, and checkout. Tests run in headless mode across Chromium, Firefox, and WebKit.
 ## Team members
 - Nađa Mutapčić
 - Adna Kikanović
