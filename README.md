@@ -16,12 +16,12 @@ This repository contains automated tests for the website [Demo Blaze](https://ww
 4. Open the terminal in Visual Studio Code (make sure the terminal opened is command prompt, and not powershell or other terminals)
 5. Run the following comman to clone the git repository
 > `git clone https://github.com/n0-smoke/SE302-Demo-Blaze-Testing-Project.git`
-7. Open the repository folder with the following command
+6. Open the repository folder with the following command
 > `cd SE302-Demo-Blaze-Testing-Project`
-8. Create the node modules folder and installed all dependencies and nodes using
+7. Create the node modules folder and installed all dependencies and nodes using
 > `npm install`
-9. Run the playwrigth tests using
+8. Run the playwrigth tests using
 > `npx playwright test`
-10. Create a localhost server showing the report with this command
+9. Create a localhost server showing the report with this command
 > `npx playwright show-report`
-11. The terminal will create this report, and give you the link on which you will click to open the report in your browser
+10. The terminal will create this report, and give you the link on which you will click to open the report in your browser
